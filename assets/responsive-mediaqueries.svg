@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400">
+ <g>
+  <title>Simple SVG + mediaqueries</title>
+  <defs>
+  <style type="text/css">
+	#circle {
+		fill: #fce57e;
+		stroke: #fff;
+		stroke-width: 100px;
+		stroke-opacity: 0.5;
+		fill-opacity: 1;
+	}
+	@media screen and (max-width: 350px) {
+		#circle {
+			fill:  #879758;
+		}
+	}
+	@media screen and (max-width: 200px) {
+		#circle {
+			fill: #3b9557;
+		}
+	}
+	(...)
+
+  </style>
+  </defs>
+  <circle cx="200" cy="200" r="150" id="circle" />
+ </g>
+</svg>

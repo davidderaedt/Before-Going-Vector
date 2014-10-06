@@ -1,0 +1,13 @@
+@keyframes left-brace-intro {
+    0% { 
+        transform: translateX(220px);
+        opacity: 0;
+    }
+    50% { 
+        opacity: 1;
+        transform: translateX(220px);
+    }
+    100% { 
+        transform: translateX(0px);
+    }
+}

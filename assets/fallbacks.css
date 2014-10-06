@@ -1,0 +1,39 @@
+/*
+	Fallbacks for background-image
+*/
+
+/* Using Modernizer */
+.myelement {
+  background-image: url(image.svg);
+}
+.no-svg .myelement {
+  background-image: url(fallback.png);
+}
+
+
+/* Using multiple background-image 
+(issues w/ Android 2.3-)*/
+.myelement {
+  background-image: url(fallback.png);
+  background-image: url(image.svg), none;
+}
+
+
+
+/*
+	Fallbacks for inline SVG	
+*/
+
+
+.svg-alt {
+  display: none;
+}
+/* Using Modernizr */
+.no-svg .svg-alt {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(image.png);
+}
+
+

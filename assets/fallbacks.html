@@ -1,0 +1,19 @@
+
+
+
+<!-- Alexey Ten's <image> trick (issues with iOS<5 & IE)-->
+<svg width="64" height="128">
+  <image xlink:href="image.svg" src="fallback.png" 
+  width="64" height="128" />
+</svg>
+
+
+
+<!-- Simple src rewritting using JS onerror-->
+<img src="image.svg" onerror="this.src=image.png">
+
+
+
+
+<svg></svg>
+<div class="svg-alt"></div>
